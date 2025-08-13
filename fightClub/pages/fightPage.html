@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Fight Club</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="homePageContainer">
+            <div class="navContainer">
+                <div class="navLeft">
+                    <span class="PageTitle">Battle</span>
+                </div>
+                <div class="navRight">
+                    <a href="../pages/homePage.html"><img id="homeIcon" class="IconContainer clickable"
+                            src="../assets/icons/home.svg" alt="icon"></a>
+                    <a href="/pages/character.html">
+                        <img id="characterIcon" class="IconContainer clickable" src="../assets/icons/character.svg"
+                            alt="icon">
+                    </a>
+                    <a href="../pages/settings.html">
+                        <img id="settingsIcon" class="IconContainer clickable" src="../assets/icons/settings.svg"
+                            alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="fightPageContainer">
+                <div class="figthContainer">
+                    <div class="unitContainer">
+                        <p class="unitName"></p>
+                        <img src="#" alt="hero" class="unitPic">
+                        <div class="healthInfoContainer">
+                            <progress class="healthBar" value="100" max="100"></progress>
+                            <p class="healthDigits"></p>
+                        </div>
+                    </div>
+                    <div class="fightSettingsContainer">
+                        <p>Please pick 1 Attack zone and 2 Defence zones</p>
+                        <div class="zonesPick">
+                            <div class="attackZones">
+                                <p>Attack Zones</p>
+                                <div class="attackZoneContainer">
+                                    <label for="headAttack" class="attackZoneLabel">Head</label>
+                                    <input type="radio" class="attackZoneInput" readonly id="headAttack">
+                                </div>
+                                <div class="attackZoneContainer">
+                                    <label for="neckAttack" class="attackZoneLabel">Neck</label>
+                                    <input type="radio" class="attackZoneInput" readonly id="neckAttack">
+                                </div>
+                                <div class="attackZoneContainer">
+                                    <label for="bodyAttack" class="attackZoneLabel">Body</label>
+                                    <input type="radio" class="attackZoneInput" readonly id="bodyAttack">
+                                </div>
+                                <div class="attackZoneContainer">
+                                    <label for="ballsAttack" class="attackZoneLabel">Balls</label>
+                                    <input type="radio" class="attackZoneInput" readonly id="ballsAttack">
+                                </div>
+                                <div class="attackZoneContainer">
+                                    <label for="legsAttack" class="attackZoneLabel">Legs</label>
+                                    <input type="radio" class="attackZoneInput" readonly id="legsAttack">
+                                </div>
+                            </div>
+                        
+                        <div class="midBorderLine"></div>
+                        <div class="defenceZonesPick">
+                            <p>Defence Zones</p>
+                            <div class="defenceZoneContainer">
+                                <input type="radio" class="defenceZoneInput" readonly id="headDefence">
+                                <label for="headDefence" class="defenceZoneLable">Head</label>
+                            </div>
+                            <div class="defenceZoneContainer">
+                                <input type="radio" class="defenceZoneInput" readonly id="neckDefence">
+                                <label for="neckDefence" class="defenceZoneLable">Neck</label>
+                            </div>
+                            <div class="defenceZoneContainer">
+                                <input type="radio" class="defenceZoneInput" readonly id="bodyDefence">
+                                <label for="bodyDefence" class="defenceZoneLable">Body</label>
+                            </div>
+                            <div class="defenceZoneContainer">
+                                <input type="radio" class="defenceZoneInput" readonly id="ballsDefence">
+                                <label for="ballsDefence" class="defenceZoneLable">Balls</label>
+                            </div>
+                            <div class="defenceZoneContainer">
+                                <input type="radio" class="defenceZoneInput" readonly id="legsDefence">
+                                <label for="legsDefence" class="defenceZoneLable">Legs</label>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="ButtonContainer disabled">Attack!</button>
+                    </div>
+                    <div class="unitContainer">
+                        <p class="unitName"></p>
+                        <img src="#" alt="notHero" class="unitPic">
+                        <div class="healthInfoContainer">
+                            <progress class="healthBar" value="100" max="100"></progress>
+                            <p class="healthDigits"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logContainer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -63,28 +63,42 @@ function updateDiv() {
 }
 updateDiv();
 
-const closeButton = document.getElementById('heroesCloseBtn');
 const heroesContainer = document.getElementById('heroesPopContainer');
-const setCharacterButton = document.getElementById('setCharacterButton');
-if (setCharacterButton) {
-    setCharacterButton.addEventListener('click', function () {
+const setCharacterButtons = document.querySelectorAll('#setCharacterButton1, #setCharacterButton2');
+const closeButton = document.getElementById('heroesCloseBtn');
+
+setCharacterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
         heroesContainer.classList.remove('hidden');
     });
-    closeButton.addEventListener('click', function () {
-        heroesContainer.classList.add('hidden');
-    });
-}
+});
 
+closeButton.addEventListener('click', () => {
+    heroesContainer.classList.add('hidden');
+});
 
-
-// hero pick script
 const heroPicks = document.getElementById('heroesChooseContainer');
-
 document.addEventListener('click', function(event) {
-    if (!heroPicks.contains(event.target) && event.target !== setCharacterButton) {
+    if (!heroPicks.contains(event.target) && ![...setCharacterButtons].includes(event.target)) {
         heroesContainer.classList.add('hidden');
-        event.stopPropagation();
-       
-        
     }
 });
+
+// hero choose script
+const yesButtons = document.querySelectorAll('.yesButton');
+const heroImg = document.querySelectorAll('.heroImg');
+const choosenHero = document.querySelector('.characterInformationAvatarImage');
+
+yesButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const selectedHero = heroImg[index].src;
+        localStorage.setItem("selectedHero", selectedHero);
+        choosenHero.src = selectedHero;
+        heroesContainer.classList.add('hidden');
+    });
+});
+
+const savedHero = localStorage.getItem("selectedHero");
+if (savedHero) {
+    choosenHero.src = savedHero;
+}

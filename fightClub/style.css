@@ -204,11 +204,14 @@ a {
 }
 
 .imageButtonPic {
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 1px solid black;
-    
+}
+
+.imageEdit {
+    width: 25px;
+    height: 25px;
 }
 
 .characterInformationAvatar:hover .imageButton {
@@ -272,9 +275,7 @@ a {
     position: relative;
     width: 50%;
 }
-.heroesPickContainer {
 
-}
 .heroesCloseButton {
     background-color: #fff;
     border: 1px solid white;
@@ -297,9 +298,35 @@ a {
 }
 
 .heroesPick {
-    
+    height: 450px;
     position: relative;
     width: 250px;
+}
+
+.yesButtonContainer {
+    display: none;
+}
+
+.heroesPick:hover .yesButtonContainer {
+    align-items: center;
+    background: rgba(255,255,255,.5);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: 110px;
+    position: absolute;
+    top: 225px;
+    width: 40px;
+}
+
+.heroesPick:hover .heroImg {
+   opacity: 0.6;
+}
+
+.yesButton {
+    width: 40px;
+    height: 40px;
+    border: none;
 }
 
 .heroImg {
@@ -310,4 +337,145 @@ a {
 
 .hidden {
     display: none;
+}
+
+/*fight page styles*/
+
+.fightPageContainer {
+        display: flex
+;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.figthContainer {
+    flex: 1;
+    display: flex
+;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.unitContainer {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 2rem;
+}
+
+.unitName {
+    font-size: large;
+}
+
+.unitPic {
+    width: 300px;
+    height: 550px;
+}
+
+.healthInfoContainer {
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.healthBar {
+        width: 100%;
+    background-color: red;
+    border-radius: 4px;
+}
+
+.healthDigits {
+        width: fit-content;
+    font-size: large;
+}
+
+.fightSettingsContainer {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.zonesPick {
+        display: flex
+;
+    gap: 1rem;
+}
+
+.attackZones {
+    display: flex
+;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.attackZoneContainer {
+    display: flex
+;
+    gap: 1rem;
+    cursor: pointer;
+}   
+
+.attackZoneLabel {
+        cursor: pointer;
+
+}
+
+.attackZoneInput {
+        margin: 0;
+    cursor: pointer;
+
+}
+
+.midBorderLine {
+        width: 1px;
+    background-color: gray;
+}
+
+.defenceZonesPick {
+        display: flex
+;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.defenceZoneContainer {
+    display: flex
+;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.defenceZoneInput {
+        margin: 0;
+    cursor: pointer;
+}
+
+.defenceZoneLable {
+    cursor: pointer;
+}
+
+.logContainer {
+        font-size: large;
+    box-sizing: border-box;
+    display: flex
+;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-top: 1px solid black;
+    overflow-y: auto;
+    height: 25%;
 }
