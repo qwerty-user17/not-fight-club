@@ -46,23 +46,23 @@
                                 <p>Attack Zones</p>
                                 <div class="attackZoneContainer">
                                     <label for="headAttack" class="attackZoneLabel">Head</label>
-                                    <input type="radio" class="attackZoneInput" readonly id="headAttack">
+                                    <input type="radio" class="attackZoneInput" readonly id="headAttack" name="attackZone">
                                 </div>
                                 <div class="attackZoneContainer">
                                     <label for="neckAttack" class="attackZoneLabel">Neck</label>
-                                    <input type="radio" class="attackZoneInput" readonly id="neckAttack">
+                                    <input type="radio" class="attackZoneInput" readonly id="neckAttack" name="attackZone">
                                 </div>
                                 <div class="attackZoneContainer">
                                     <label for="bodyAttack" class="attackZoneLabel">Body</label>
-                                    <input type="radio" class="attackZoneInput" readonly id="bodyAttack">
+                                    <input type="radio" class="attackZoneInput" readonly id="bodyAttack" name="attackZone">
                                 </div>
                                 <div class="attackZoneContainer">
                                     <label for="ballsAttack" class="attackZoneLabel">Balls</label>
-                                    <input type="radio" class="attackZoneInput" readonly id="ballsAttack">
+                                    <input type="radio" class="attackZoneInput" readonly id="ballsAttack" name="attackZone" checked>
                                 </div>
                                 <div class="attackZoneContainer">
                                     <label for="legsAttack" class="attackZoneLabel">Legs</label>
-                                    <input type="radio" class="attackZoneInput" readonly id="legsAttack">
+                                    <input type="radio" class="attackZoneInput" readonly id="legsAttack" name="attackZone">
                                 </div>
                             </div>
                         
@@ -70,28 +70,28 @@
                         <div class="defenceZonesPick">
                             <p>Defence Zones</p>
                             <div class="defenceZoneContainer">
-                                <input type="radio" class="defenceZoneInput" readonly id="headDefence">
+                                <input type="checkbox" class="defenceZoneInput" id="headDefence">
                                 <label for="headDefence" class="defenceZoneLable">Head</label>
                             </div>
                             <div class="defenceZoneContainer">
-                                <input type="radio" class="defenceZoneInput" readonly id="neckDefence">
+                                <input type="checkbox" class="defenceZoneInput" id="neckDefence">
                                 <label for="neckDefence" class="defenceZoneLable">Neck</label>
                             </div>
                             <div class="defenceZoneContainer">
-                                <input type="radio" class="defenceZoneInput" readonly id="bodyDefence">
+                                <input type="checkbox" class="defenceZoneInput" id="bodyDefence">
                                 <label for="bodyDefence" class="defenceZoneLable">Body</label>
                             </div>
                             <div class="defenceZoneContainer">
-                                <input type="radio" class="defenceZoneInput" readonly id="ballsDefence">
+                                <input type="checkbox" class="defenceZoneInput" id="ballsDefence">
                                 <label for="ballsDefence" class="defenceZoneLable">Balls</label>
                             </div>
                             <div class="defenceZoneContainer">
-                                <input type="radio" class="defenceZoneInput" readonly id="legsDefence">
+                                <input type="checkbox" class="defenceZoneInput" id="legsDefence">
                                 <label for="legsDefence" class="defenceZoneLable">Legs</label>
                             </div>
                         </div>
                         </div>
-                        <button class="ButtonContainer disabled">Attack!</button>
+                        <button class="ButtonContainer disabled" id="fightButton">Attack!</button>
                     </div>
                     <div class="unitContainer">
                         <p class="unitName"></p>

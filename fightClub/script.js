@@ -34,7 +34,7 @@ if (usernameSettingsInput) {
 
     const saveButton = document.querySelector('.buttonContainer');
     const usernameSettingsContainer = document.querySelector('.editNameInput');
-
+    if (saveButton) {
     saveButton.addEventListener('click', function () {
         if (usernameSettingsInput.readOnly) {
             usernameSettingsInput.readOnly = false;
@@ -50,7 +50,9 @@ if (usernameSettingsInput) {
             usernameSettingsContainer.classList.remove('editable');
             saveButton.textContent = 'Edit';
         }
+    
     });
+}
 }
 
 // character page script
@@ -73,9 +75,14 @@ setCharacterButtons.forEach(btn => {
     });
 });
 
-closeButton.addEventListener('click', () => {
-    heroesContainer.classList.add('hidden');
-});
+if (closeButton) {
+    closeButton.addEventListener('click', () => {
+        heroesContainer.classList.add('hidden');
+    });
+    closeButton.addEventListener('click', () => {
+    heroesContainer.classList.add('hidden');    
+    });
+}
 
 const heroPicks = document.getElementById('heroesChooseContainer');
 document.addEventListener('click', function(event) {
@@ -88,6 +95,7 @@ document.addEventListener('click', function(event) {
 const yesButtons = document.querySelectorAll('.yesButton');
 const heroImg = document.querySelectorAll('.heroImg');
 const choosenHero = document.querySelector('.characterInformationAvatarImage');
+
 
 yesButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
@@ -102,3 +110,12 @@ const savedHero = localStorage.getItem("selectedHero");
 if (savedHero) {
     choosenHero.src = savedHero;
 }
+
+const fightButton = document.getElementById('fightButton');
+const attackZones = document.querySelectorAll('.attackZoneInput');
+const defenseZones = document.querySelectorAll('.defenceZoneInput');
+
+
+
+
+
