@@ -9,7 +9,7 @@
     <title>Fight Club</title>
 </head>
 
-<body>
+<body id="characterPage">
     <div class="main">
         <div class="homePageContainer">
             <div class="navContainer">
@@ -33,7 +33,7 @@
                 <div class="characterPageContainer">
                     <div class="characterInformation">
                         <div class="characterInformationAvatar">
-                            <img src="#" alt="avatar1"
+                            <img src="/assets/images/fighters/hero1.png" alt="avatar1"
                                 class="characterInformationAvatarImage">
                             <div class="imageButton" >
                                 <button id="setCharacterButton2" class="buttonContainer imageButtonPic">
@@ -45,8 +45,8 @@
                         <div class="characterInformationData">
                             <div class="characterInformationDataName" id="characterNameData"></div>
                             <div class="characterInformationDataResults">
-                                <span class="characterInformationDataResults_Wins">Wins: </span>
-                                <span class="characterInformationDataResults_Losses">Loses: </span>
+                                <span class="characterInformationDataResults_Wins" id="wins"> </span>
+                                <span class="characterInformationDataResults_Losses" id="looses"> </span>
                             </div>
                         </div>
                     </div>
@@ -59,35 +59,35 @@
             <img src="/assets/icons/close.svg" alt="close" class="heroesCloseButton IconContainer clickable"
                 id="heroesCloseBtn">
             <div class="heroesPickContent">
-                <div class="heroesPick"><img src="/assets/images/fighters/hero1.png" alt="hero1" class="heroImg">
+                <div class="heroesPick"><img src="/assets/images/fighters/hero1.png" alt="hero1" data-hero="hero1" class="heroImg">
                 <div class="yesButtonContainer">
                     <button class="buttonContainer yesButton" >
                         <img src="/assets/icons/check_circle.svg" alt="yesButton" class="yesButtonImage">
                     </button>
                 </div>
                 </div>
-                <div class="heroesPick"><img src="/assets/images/fighters/hero2.png" alt="hero2" class="heroImg">
+                <div class="heroesPick"><img src="/assets/images/fighters/hero2.png" alt="hero2" data-hero="hero2" class="heroImg">
                 <div class="yesButtonContainer">
                     <button class="buttonContainer yesButton" >
                         <img src="/assets/icons/check_circle.svg" alt="yesButton" class="yesButtonImage">
                     </button>
                 </div>
                 </div>
-                <div class="heroesPick"><img src="/assets/images/fighters/hero3.png" alt="hero3" class="heroImg">
+                <div class="heroesPick"><img src="/assets/images/fighters/hero3.png" alt="hero3" data-hero="hero3" class="heroImg">
                 <div class="yesButtonContainer">
                     <button class="buttonContainer yesButton" >
                         <img src="/assets/icons/check_circle.svg" alt="yesButton" class="yesButtonImage">
                     </button>
                 </div>
                 </div>
-                <div class="heroesPick"><img src="/assets/images/fighters/hero4.png" alt="hero4" class="heroImg">
+                <div class="heroesPick"><img src="/assets/images/fighters/hero4.png" alt="hero4" data-hero="hero4" class="heroImg">
                 <div class="yesButtonContainer">
                     <button class="buttonContainer yesButton" >
                         <img src="/assets/icons/check_circle.svg" alt="yesButton" class="yesButtonImage">
                     </button>
                 </div>
                 </div>
-                <div class="heroesPick"><img src="/assets/images/fighters/hero5.png" alt="hero5" class="heroImg">
+                <div class="heroesPick"><img src="/assets/images/fighters/hero5.png" alt="hero5" data-hero="hero5" class="heroImg">
                 <div class="yesButtonContainer">
                     <button class="buttonContainer yesButton" >
                         <img src="/assets/icons/check_circle.svg" alt="yesButton" class="yesButtonImage">
