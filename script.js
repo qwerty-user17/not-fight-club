@@ -370,7 +370,7 @@ if (document.body.id === 'fightPage') {
         } else if (enemyHealthBar.value === 0 && heroHealthBar.value === 0) {
             battleEnded = true;
             alert('Unbelievable! That is a draw...');
-            window.location.href = 'character.html';
+            window.location.href = 'pages/character.html';
         }
     })
 
@@ -380,14 +380,14 @@ if (document.body.id === 'fightPage') {
             loosePopup.classList.add('hidden');
             bgMusic.pause();
             bgMusic.currentTime = 12;
-            window.location.href = 'character.html'
+            window.location.href = 'pages/character.html'
         });
         winBtn.addEventListener('click', () => {
             alert('You win!');
             winPopup.classList.add('hidden');
             bgMusic.pause();
             bgMusic.currentTime = 12;
-            window.location.href = 'character.html'
+            window.location.href = 'pages/character.html'
         });
     }
 
