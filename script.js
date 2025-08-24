@@ -65,7 +65,7 @@ if (document.body.id === 'registerPage') {
                     resetStatsForName(name);
                 }
 
-                window.location.href = "not-fight-club/pages/homePage.html";
+                window.location.href = "pages/homePage.html";
             }
         });
     }
