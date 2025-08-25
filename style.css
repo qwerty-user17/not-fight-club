@@ -742,7 +742,7 @@ progress::-webkit-progress-value {
 }
 
 #fightPage {
-    background-image: url(/assets/images/Arena_netherealm.webp);
+    background-image: url(../assets/images/Arena_netherealm.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
